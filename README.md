@@ -1,8 +1,8 @@
 # Test Vue App (Authors-Books)
 >Test SPA based on [Vue](https://vuejs.org), [Vue-Router](https://router.vuejs.org), [Vuex](https://vuex.vuejs.org), [Fontawesome](https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs), [Styleguidist](https://vue-styleguidist.github.io) and [Jest](https://vue-test-utils.vuejs.org/guides/testing-single-file-components-with-jest.html) 
 
-![App Screen 1](./media/screen1.png)
-![App Screen 2](./media/screen2.png)
+![App Screen 1](./media/screen.png)
+![App Screen 2](./media/screen.png)
 
 
 ## Project setup
