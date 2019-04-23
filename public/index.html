@@ -5,13 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>spa-app</title>
+
+
+    <meta charset="utf-8"/>
+    <meta name="application-name" content="Lition - Trading Platform">
+    <meta name="description" content="Blockchain energy exchange. The world's first mass market energy trading platform.">
+    <meta name="keywords" content="lition,green energy,blockchain,trading,electricity,energy">
+
+    <meta property="og:title" content="Test Vue SPA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/instinctools-uie/test-vue-spa" />
+    <meta property="og:image" content="https://github.com/instinctools-uie/test-vue-spa/media/screen1.png" />
+    <meta property="og:description" content="Test Vue SPA" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <meta name="theme-color" content="#41b883"/>
+    <meta name="apple-mobile-web-app-title" content="Test Vue SPA" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#41b883" />
+    <meta name="msapplication-config" content="<%= BASE_URL %>browserconfig.xml" />
+
+    <link rel="manifest" href="<%= BASE_URL %>manifest.webmanifest"/>
+    <link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico"/>
+    <link rel="icon" sizes="16x16" href="<%= BASE_URL %>favicon-16x16.png" />
+    <link rel="icon" sizes="32x32" href="<%= BASE_URL %>favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="<%= BASE_URL %>apple-touch-icon.png" />
+    <link rel="mask-icon" href="<%= BASE_URL %>safari-pinned-tab.svg" color="#48d376" />
+
+    <title>Test Vue SPA</title>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but spa-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="app">
+      <router-view></router-view>
+    </div>
   </body>
 </html>
