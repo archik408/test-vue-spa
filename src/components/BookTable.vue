@@ -68,3 +68,22 @@ export default {
   margin: 0.25em;
 }
 </style>
+
+<docs>
+  ```
+  <book-table
+    :books="[
+      {
+        id: 1,
+        name: 'The Green Mile'
+      },
+      {
+        id: 2,
+        name: 'The Dark Tower'
+      }
+    ]"
+    :on-edit="f => f"
+    :on-remove="f => f"
+  ></book-table>
+  ```
+</docs>

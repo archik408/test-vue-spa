@@ -72,3 +72,26 @@ export default {
   margin: 0.25em;
 }
 </style>
+
+<docs>
+  ```
+  <author-table
+    :authors="[
+      {
+        id: 1,
+        firstName: 'Stephen',
+        lastName: 'King',
+        books: [1, 2, 3, 4]
+      },
+      {
+        id: 2,
+        firstName: 'Robert',
+        lastName: 'Louis Stevenson',
+        books: [5, 6, 7]
+      }
+    ]"
+    :on-edit="f => f"
+    :on-remove="f => f"
+  ></author-table>
+  ```
+</docs>

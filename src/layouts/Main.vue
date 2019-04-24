@@ -26,6 +26,7 @@
 <script>
 import VLink from '../components/VLink.vue';
 export default {
+  name: 'MainLayout',
   components: {
     VLink
   }
@@ -33,85 +34,6 @@ export default {
 </script>
 
 <style>
-:root {
-  --gray-color: #ece8e46e;
-  --dark-green-color: rgba(86, 184, 134, 0.62);
-  --light-green-color: #41b883;
-  --shamrock-green-color: #41ce99;
-  --pickled-bluewood-color: #35495e;
-  --shadow: 0.2em 0.2em 0.5em #aba5a5;
-}
-
-body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  margin: 0;
-}
-
-h1 {
-  color: var(--light-green-color);
-}
-
-button {
-  height: 2.4em;
-  box-sizing: border-box;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 1em;
-  background: var(--light-green-color);
-  color: white;
-  appearance: none;
-}
-
-button:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-button:focus {
-  outline: 0.25em dotted var(--light-green-color);
-}
-
-form > input,
-form > select {
-  margin: 0.5em 0 0;
-  height: 2em;
-  width: 100%;
-  box-sizing: border-box;
-  color: var(--pickled-bluewood-color);
-  border-radius: 0.4em;
-  font-size: 1em;
-  padding: 0.5em;
-  border: 0.06em solid var(--light-green-color);
-
-  appearance: none;
-}
-
-form > input:focus,
-form > select:focus {
-  outline: 0.25em dotted var(--light-green-color);
-}
-
-form > select {
-  height: 7em;
-}
-
-form > select::-webkit-scrollbar {
-  background: var(--light-green-color);
-  border-radius: 5em;
-}
-
-form > select::-webkit-scrollbar-thumb {
-  background: var(--pickled-bluewood-color);
-  border-radius: 5em;
-  box-shadow: inset 0 0 6px var(--light-green-color);
-}
-
-form > label {
-  margin: 1em 0 0;
-  color: var(--light-green-color);
-  font-weight: 500;
-}
-
 .container {
   min-height: 100vh;
   width: 60em;

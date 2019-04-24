@@ -20,12 +20,18 @@ export default {
 </script>
 
 <style scoped>
-  form {
-    width: 12em;
-    text-align: right;
-  }
+form {
+  width: 12em;
+  text-align: right;
+}
 
-  form > * {
-    margin: 1em 0 0;
-  }
+form > * {
+  margin: 1em 0 0;
+}
 </style>
+
+<docs>
+  ```
+  <login-form :on-submit="f => f"></login-form>
+  ```
+</docs>

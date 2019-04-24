@@ -114,8 +114,8 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vmax;
-  height: 100vmax;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,3 +123,32 @@ export default {
   opacity: 0.7;
 }
 </style>
+
+<docs>
+  ```
+  const initialState = { show: false };
+
+  <button @click="initialState.show = true">Show Author Form</button>
+  <author-form
+    :show="initialState.show"
+    :author="{
+      id: 2,
+      firstName: 'Obi Van',
+      lastName: 'Kenobi',
+      books: []
+    }"
+    :books="[
+    {
+      id: 1,
+      name: 'Option 1'
+    },
+    {
+      id: 2,
+      name: 'Option 2'
+    }
+    ]"
+    :on-save="() => initialState.show = false"
+    :on-close="() => initialState.show = false"
+  ></author-form>
+  ```
+</docs>

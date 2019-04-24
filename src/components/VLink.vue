@@ -16,12 +16,12 @@ export default {
   },
   computed: {
     isActive() {
-      return this.href === this.$router.currentRoute.path;
+      return this.$router && this.href === this.$router.currentRoute.path;
     }
   },
   methods: {
     go() {
-      this.$router.push(this.href);
+      this.$router && this.$router.push(this.href);
     }
   }
 };
@@ -42,3 +42,9 @@ a:hover {
   text-decoration: none;
 }
 </style>
+
+<docs>
+  ```
+  <v-link :href="'#'">V-Link Example</v-link>
+  ```
+</docs>

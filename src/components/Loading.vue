@@ -16,8 +16,8 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vmax;
-  width: 100vmax;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,3 +53,14 @@ export default {
   }
 }
 </style>
+
+<docs>
+  ```
+  const initialState = { show: false };
+
+  <button @click="initialState.show = true">Show Loading Indicator</button>
+  <div @click="initialState.show = false">
+    <loading v-if="initialState.show"></loading>
+  </div>
+  ```
+</docs>
