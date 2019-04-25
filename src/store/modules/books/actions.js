@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { createBook, getBooks, removeBook, updateBook } from '../../../services/api/books';
+import { createBook, getBooks, getBook, removeBook, updateBook } from '../../../services/api/books';
 
 export default {
   getBooks({ commit, state }) {
@@ -10,6 +10,18 @@ export default {
       promise: getBooks,
       namespace: 'books'
     });
+  },
+  getBook({ commit, state }, id) {
+    Vue.commitPromise(
+      {
+        state,
+        commit,
+        mutation: 'setBook',
+        promise: getBook,
+        namespace: 'book'
+      },
+      id
+    );
   },
   removeBook({ commit, state }, id) {
     Vue.commitPromise(
@@ -48,4 +60,3 @@ export default {
     );
   }
 };
-

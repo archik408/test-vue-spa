@@ -2,6 +2,9 @@ export default {
   setBooks(state, payload) {
     state.books = payload;
   },
+  setBook(state, payload) {
+    state.book = payload;
+  },
   removeBook(state, payload) {
     state.deletedBook = payload;
     state.books = { ...state.books, data: state.books.data.filter(book => book.id !== payload.data.id) };

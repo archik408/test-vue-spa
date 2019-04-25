@@ -75,7 +75,7 @@ export default {
   padding: 2em 2em 1em;
   border: none;
   border-radius: 1em;
-  background: #ece8e4;
+  background: var(--light-gray-color);
   box-shadow: 0.2em 0.2em 0.5em var(--pickled-bluewood-color);
   transition: top 0.2s ease-out;
 }

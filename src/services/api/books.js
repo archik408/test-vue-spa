@@ -45,6 +45,19 @@ export function getBooks() {
 }
 
 // TODO bind to real backe-end endpoints and replace mockup
+export function getBook(id) {
+  return new Promise(resolve => {
+    setTimeout(
+      () =>
+        resolve({
+          data: { ...backendMock.books.find(b => b.id == id) }
+        }),
+      1200
+    );
+  });
+}
+
+// TODO bind to real backe-end endpoints and replace mockup
 export function removeBook(id) {
   backendMock.books = backendMock.books.filter(b => b.id !== id);
   return new Promise(resolve => {
@@ -60,7 +73,7 @@ export function removeBook(id) {
 
 // TODO bind to real backe-end endpoints and replace mockup
 export function updateBook(data) {
-  const existBookIndex = backendMock.books.findIndex(b => b.id === data.id);
+  const existBookIndex = backendMock.books.findIndex(b => b.id == data.id);
   backendMock.books[existBookIndex] = data;
   return new Promise(resolve => {
     setTimeout(

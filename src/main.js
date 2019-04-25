@@ -15,7 +15,7 @@ import './common.css';
 const routes = [
   { path: '/', component: Home },
   { path: '/books', component: Books },
-  { path: '/book', component: Book },
+  { path: '/book', component: Book, props: true },
   { path: '/book/:id', component: Book },
   { path: '/authors', component: Authors },
   { path: '/login', component: Login },
